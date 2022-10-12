@@ -1,0 +1,36 @@
+div {
+    margin: 20px;
+    width: 50%;
+    height: 250px;
+    background: red;
+    background: radial-gradient(circle,yellow,red,green,blue);
+    background: -webkit-radial-gradient(circle,red, yellow, green, blue, purple );
+    border-radius: 10px;
+}
+
+@keyframes titre {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 166px;
+    }
+}
+@-webkit-keyframes titre {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 166px;
+    }
+}
+
+h1 {
+     font-family: Arial, sans-serif;
+    -webkit-animation: titre 2s infinite alternate ease;
+    animation: titre 2s infinite alternate ease ;
+}
+h1:hover {
+margin-left: 150px;
+color:green;
+}
